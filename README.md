@@ -12,12 +12,18 @@ class_eval is better then normal method ClassMethods because you can include all
 - extends / includes
 etc...
 
+
+Usecase
+-------
+Architecture of an application based on mixins is considered a bad practice and there are other ways to refactor models. But there was a case I really
+enjoyed putting some functionality out of a ActiveRecord class. I was working on a large app which core functionality was searching.
+I decided that methods related with solr so `searchable` and wrapper on solr search are so important in my app, that they deserve to have their own file.
+
+
 Installation
 -------
 
 	gem 'just_include', git: 'git://github.com/kubenstein/just_include.git'
-
-(soon gem will be pubish)
 
 
 Usage
