@@ -1,5 +1,5 @@
 # JustInclude
-# see gem homepage for more info
+# see homepage for more info:
 # https://github.com/kubenstein/just_include
 
 module JustInclude

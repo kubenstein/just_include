@@ -15,15 +15,15 @@ etc...
 
 Usecase
 -------
-Architecture of an application based on mixins is considered a bad practice and there are other ways to refactor models. But there was a case I really
-enjoyed putting some functionality out of a ActiveRecord class. I was working on a large app which core functionality was searching.
+I was working on a large app where core functionality was searching.
 I decided that methods related with solr so `searchable` and wrapper on solr search are so important in my app, that they deserve to have their own file.
+From class point of view, functionality sill belongs to that class.
 
 
 Installation
 -------
 
-	gem 'just_include', git: 'git://github.com/kubenstein/just_include.git'
+	gem 'just_include'
 
 
 Usage
