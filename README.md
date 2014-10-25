@@ -33,8 +33,9 @@ Usage
 Create a module with functionality you want to be part of other class
 
 	module FunctionalityA
-	   include JustInclude
-	   just_include do
+	# use Simply or JustInclude
+	#  (include JustInclude)::this_code do
+	   (include Simply)::this_code do
 
 	     extend FriendlyId
 
@@ -50,7 +51,7 @@ Create a module with functionality you want to be part of other class
 	     end
 
 	   end
-	 end
+	end
 
 Then simply include this module inside other class
 
