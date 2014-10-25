@@ -10,6 +10,7 @@ Gem::Specification.new do |s|
   s.homepage    = 'https://github.com/kubenstein/just_include'
   s.summary     = %q{Simplify including functionality from module to class}
   s.description = %q{With JustInclude you can include all kind of things from module to class, such as: methods, class methods, callbacks, relation definitions, act_as_*, constans, extends/includes, etc...}
+  s.license     = 'MIT'
 
   s.rubyforge_project = 'just_include'
 
@@ -18,5 +19,5 @@ Gem::Specification.new do |s|
   s.executables   = `git ls-files -- bin/*`.split("\n").map { |f| File.basename(f) }
   s.require_paths = ['lib']
 
-  s.add_development_dependency 'rspec'
+  s.add_development_dependency 'rspec', '~> 3'
 end
