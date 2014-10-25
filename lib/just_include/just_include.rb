@@ -4,14 +4,18 @@
 
 module JustInclude
 
-  def self.included(base)
-    base.extend(ActiveSupport::Concern)
-    base.extend(ClassMethods)
+  def self.included(included_module)
+    included_module.extend(IncludedModuleClassMethods)
   end
 
-  module ClassMethods
+  module IncludedModuleClassMethods
     def just_include(&block)
-      included { class_eval(&block) }
+      class << self; attr_accessor :block; end
+      self.block = block
+    end
+
+    def included(including_class)
+      including_class.class_eval(&self.block)
     end
   end
 

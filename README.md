@@ -1,8 +1,8 @@
 JustInclude
 =============
 
-JustInclude simply wraps included { class_eval { ... } } combo.
-class_eval is better then normal method ClassMethods because you can include all kind of things you normally type inside a class. Such as:
+JustInclude changes the way you define methods in included modules. Now you write stuff in your module as you would ctrl+c ctrl+v from class. No more ClassMethods nor Instance Methods. See Usage section for better understanding.
+You can include all kind of things you normally type inside a class. Such as:
 - methods
 - class methods
 - callbacks
@@ -11,6 +11,8 @@ class_eval is better then normal method ClassMethods because you can include all
 - constans
 - extends / includes
 etc...
+
+JustInclude has zero external dependencies so can be used in pure ruby apps also, not only Rails.  
 
 
 Usecase
