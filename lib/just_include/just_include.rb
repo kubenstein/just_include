@@ -2,20 +2,18 @@
 # see homepage for more info:
 # https://github.com/kubenstein/just_include
 
+
 module JustInclude
 
-  def self.included(included_module)
-    included_module.extend(IncludedModuleClassMethods)
-  end
+  def self.included(including_module)
+    class << including_module;  attr_accessor :just_include_block; end
 
-  module IncludedModuleClassMethods
-    def just_include(&block)
-      class << self; attr_accessor :block; end
-      self.block = block
+    def including_module.included(including_class)
+      including_class.class_eval(&(self.just_include_block))
     end
 
-    def included(including_class)
-      including_class.class_eval(&self.block)
+    def including_module.this_code(&block)
+      self.just_include_block = block
     end
   end
 
