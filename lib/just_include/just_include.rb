@@ -18,3 +18,4 @@ module JustInclude
   end
 
 end
+Simply = JustInclude

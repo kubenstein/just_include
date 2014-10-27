@@ -35,7 +35,7 @@ module OtherModule
 end
 
 module Functionality
-  (include JustInclude)::this_code do
+  (include Simply)::this_code do
 
     extend OtherModule
 
