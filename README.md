@@ -1,4 +1,4 @@
-JustInclude
+JustInclude [![Build Status](https://travis-ci.org/kubenstein/just_include.svg)](https://travis-ci.org/kubenstein/just_include)
 =============
 
 JustInclude changes the way you define methods in included modules. Now you write stuff in your module as you would ctrl+c ctrl+v from class. No more ClassMethods nor Instance Methods. See Usage section for better understanding.
