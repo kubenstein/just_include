@@ -5,8 +5,8 @@ require 'just_include/version'
 Gem::Specification.new do |s|
   s.name        = 'just_include'
   s.version     = JustInclude::VERSION
-  s.authors     = ['kubenstein']
-  s.email       = ['kubenstein@gmail.com']
+  s.authors     = ['Jakub Niewczas']
+  s.email       = ['niewczas.jakub@gmail.com']
   s.homepage    = 'https://github.com/kubenstein/just_include'
   s.summary     = %q{Simplify including functionality from module to class}
   s.description = %q{With JustInclude you can include all kind of things from module to class, such as: methods, class methods, callbacks, relation definitions, act_as_*, constans, extends/includes, etc...}
