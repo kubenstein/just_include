@@ -58,4 +58,11 @@ Then simply include this module inside other class
 	class OtherClass < ActiveRecord::Base 
 		include FunctionalityA
 	end
+
+
+Old Syntax
+-----
+If you prefer old, less fancy syntax, check out [version v.1.0.0](https://github.com/kubenstein/just_include/tree/v1.0.0).
+
+
 	
